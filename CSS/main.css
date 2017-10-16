@@ -1,0 +1,57 @@
+*{
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    text-align: center;
+}
+p {text-align: left;
+margin: 5px}
+
+.leftBar{
+      width: 20%;
+    height: 100%;
+    float: left;
+    border: 5px outset #aaa;
+    text-align: center;
+    display: inline-block;
+}
+button, a { 
+    display:block;
+    border: 5px outset #bbb;
+    margin: 15px;
+    padding: 15px;
+    width:100%;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.rightBar{
+    width: 20%;
+    height: 100%;
+    float: right;
+    border: 5px outset #aaa;
+    text-align: center;
+    display: inline-block;
+}
+
+main {
+    width:50%;
+    display: inline-block;
+    margin: 15px
+    
+}
+
+.active {
+    background-color: white;
+    border-style: inset;
+    color: black;
+}
+
+.hidden{
+    display: none;
+}
+form label, textarea, input{ 
+    display:block;
+    width: 100%;}
+form textarea{
+    padding-bottom: 80%;
+}
