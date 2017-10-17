@@ -24,6 +24,7 @@ function test() {
     dataDump.textContent= text;
     let attendance = document.getElementById('attendance'); 
 attendance.textContent= waivered.length;
+    alert('Data entered!')
 }
 /////////////////////View Waivered List command
 function exhaustive(){
@@ -39,9 +40,15 @@ function exhaustive(){
 ////////////////////// Check Waiver Command
 function Waiver() {
     let haswaiver = 0;
-    let person = prompt("Character name please");
+    var person = prompt("Character name please");
     let drama = dumpRetrieve();
 haswaiver = drama.indexOf(person);
-    haswaiver >= 0? 
-        alert(person + " has signed a waver! Have fun swinging foam!") : alert (person + " has NOT signed a waver! Get on that >:\(");    
+    if (haswaiver >= 0){ 
+        alert(person + " has signed a waver! Have fun swinging foam!") }
+
+else {
+    alert(person + " has no waiver");
+    let names= document.getElementById("dataDump");
+    names.textContent += " " + person;
+}
 }
