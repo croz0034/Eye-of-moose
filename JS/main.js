@@ -1,4 +1,6 @@
 
+/////////////////////Troll Stuff
+var signins
 ////////////////// Table Clearing
 function clear(){
      let ork = document.getElementById('ork')
@@ -24,7 +26,7 @@ function test() {
     dataDump.textContent= text;
     let attendance = document.getElementById('attendance'); 
 attendance.textContent= waivered.length;
-    alert('Data entered!')
+    alert('Data entered!');
 }
 /////////////////////View Waivered List command
 function exhaustive(){
@@ -40,15 +42,27 @@ function exhaustive(){
 ////////////////////// Check Waiver Command
 function Waiver() {
     let haswaiver = 0;
-    var person = prompt("Character name please");
+    let person = prompt("Character name please");
     let drama = dumpRetrieve();
-haswaiver = drama.indexOf(person);
+    haswaiver = drama.indexOf(person);
     if (haswaiver >= 0){ 
-        alert(person + " has signed a waver! Have fun swinging foam!") }
-
+        alert(person + " has signed a waver! Have fun swinging foam!");
+    }
 else {
     alert(person + " has no waiver");
     let names= document.getElementById("dataDump");
     names.textContent += " " + person;
 }
 }
+
+/////////////////////////// Tourney stuff
+
+
+//////////////////////////// Add to tourney Roster
+function tourneyRegister(i){
+    let person = prompt('Who would like to sign in for the tournament?');
+    let names= document.getElementById(i);
+    names.textContent += " " + person;
+}
+
+/////////////////////////Tourney Randomizer

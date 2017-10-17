@@ -7,7 +7,7 @@
        
     <meta name="viewport" content="width=device-width, initial-scale=1">
        
-    <title>Blank Template</title>
+    <title>Eye of Moose</title>
    
 <link rel="stylesheet" href="CSS/main.css">
     <script src="JS/main.js" type="text/javascript"></script>
@@ -23,8 +23,12 @@
        
        
        <h2> Tourney: </h2>
-       <button onclick="Buttan()"> </button>
-       <button onclick="Level()"> </button>
+       <button onclick=tourneyRegister(1)>  single stick </button>
+       <button onclick="tourneyRegister(2)"> Florentine  </button>
+       <button onclick="tourneyRegister(3)"> Sword and Board </button>
+       <button onclick="tourneyRegister(4)"> Polearm </button>
+       <button onclick="tourneyRegister(5)"> Open </button>
+       <button onclick="Level()"> Randomize Brackets </button>
     
     </div>
 <!------------Main Area (to be filled by JS)------------>
@@ -44,6 +48,16 @@
 
 <h2> Data entered in the top</h2>
 <p id="dataDump">name name name</p>
+<p>single stick</p>
+<p id="1"> one two three</p>
+<p> florentine</p>
+<p id="2"> one two three</p>
+<p>sword and board</p> 
+<p id="3"> one two three</p>
+<p>polearm</p>
+<p id="4"> one two three</p>
+<p> open</p>
+ <p id="5"> one two three</p>
 
 
 
@@ -58,7 +72,7 @@
           <h2> Number of Waivers in Database </h2>
           <h2 id="attendance"> 3 </h2>
           <h2> Number of Players Checked</h2>
-          <h2 clsdd = "toutrney"> 0 </h2>
+          <h2  id="signins"> 0 </h2>    
     
              </header>
       
